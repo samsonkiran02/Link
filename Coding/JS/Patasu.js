@@ -1,4 +1,4 @@
-/*! jQuery Compat v3.0.0-alpha1 | (c) jQuery Foundation | jquery.org/license */
+/*! Copyright | (c) samson kiran | author: samsonkiran */
 
 !function(a,b){
           "object"==typeof module&&
