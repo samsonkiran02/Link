@@ -1,4 +1,4 @@
-/*! Copyright | (c) samson kiran | author: samsonkiran */
+/*! Copyright | (c) SamsonKiran | author: Samson Kiran */
 
 !function(a,b){
           "object"==typeof module&&
