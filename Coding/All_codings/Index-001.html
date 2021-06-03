@@ -811,3 +811,1587 @@ text-transform: none;
 <p>samson kiran </p>
 https://html-css-js.com/css/generator/font/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+My html code 
+
+
+For blinking text 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      #blink {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: red;
+        transition: 0.1s;
+      }
+    </style>
+  </head>
+  <body>
+     <p id="blink">samson kiran</p>
+ <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+        blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 1000);
+    </script>
+  </body>
+</html>
+For links 
+
+
+
+
+
+<p><a href="https://Www.Samsonkiran.Com">This is a link to Page 2</a></p>
+
+
+
+
+
+
+
+For outline 
+
+
+
+
+
+
+
+<pre style='text-align: left; border: 1px dashed #008DEF; line-height: 18px; padding: 15px; font-size: 13px; font-family:'Courier New', Courier, monospace; overflow: auto;'>Samson kiran</pre>
+
+
+
+
+
+
+
+
+
+
+
+For Calculator
+
+
+
+
+<html> 
+
+   <head> 
+
+      <script> 
+
+         //function that display value 
+
+         function dis(val) 
+
+         { 
+
+             document.getElementById("result").value+=val 
+
+         } 
+
+           
+
+         //function that evaluates the digit and return result 
+
+         function solve() 
+
+         { 
+
+             let x = document.getElementById("result").value 
+
+             let y = eval(x) 
+
+             document.getElementById("result").value = y 
+
+         } 
+
+           
+
+         //function that clear the display 
+
+         function clr() 
+
+         { 
+
+             document.getElementById("result").value = "" 
+
+         } 
+
+      </script> 
+
+      <!-- for styling --> 
+
+      <style> 
+
+         .title{ 
+
+         margin-bottom: 10px; 
+
+         text-align:center; 
+
+         width: 210px; 
+
+         color:green; 
+
+         border: solid black 2px; 
+
+         } 
+
+  
+
+         input[type="button"] 
+
+         { 
+
+         background-color:green; 
+
+         color: black; 
+
+         border: solid black 2px; 
+
+         width:100% 
+
+         } 
+
+  
+
+         input[type="text"] 
+
+         { 
+
+         background-color:white; 
+
+         border: solid black 2px; 
+
+         width:100% 
+
+         } 
+
+      </style> 
+
+   </head> 
+
+   <!-- create table --> 
+
+   <body> 
+
+      <div class = title >GeeksforGeeks Calculator</div> 
+
+      <table border="1"> 
+
+         <tr> 
+
+            <td colspan="3"><input type="text" id="result"/></td> 
+
+            <!-- clr() function will call clr to clear all value --> 
+
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+
+         </tr> 
+
+         <tr> 
+
+            <!-- create button and assign value to each button --> 
+
+            <!-- dis("1") will call function dis to display value --> 
+
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+
+            <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+
+         </tr> 
+
+         <tr> 
+
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+
+         </tr> 
+
+         <tr> 
+
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+
+         </tr> 
+
+         <tr> 
+
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+
+            <!-- solve function call function solve to evaluate value --> 
+
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+
+            <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+
+         </tr> 
+
+      </table> 
+
+   </body> 
+
+</html>    
+
+
+
+
+
+
+
+For Calculators 
+
+
+
+
+
+
+<html> <head> <body> <form name="calculator"> <table> <tr> <td colspan="4"> <input type="text" name="display" id="display" disabled> </td> </tr> <tr> <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td> <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td> <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td> <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td> </tr> <tr> <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td> <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td> <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td> <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td> </tr> <tr> <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td> <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td> <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td> <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td> </tr> <tr> <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td> <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td> <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td> <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td> </tr> </table> </form> </body> </head> </html>
+
+
+
+
+
+
+For search 
+
+
+
+
+
+
+<form id="form" role="search">
+  <input type="search" id="query" name="q"
+   placeholder="Search..."
+   aria-label="Search through site content">
+  <button>Search</button>
+</form>
+
+
+
+
+
+
+For type your text 
+
+
+
+
+<input = type="text" name="text"  placeholder="type your text...">
+
+
+
+
+
+
+For select time 
+
+
+
+
+<form action="/action_page.php">
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit">
+</form>
+
+
+
+
+
+For date and time 
+
+
+
+
+
+
+<iframe src="http://free.timeanddate.com/clock/i7p1yrfg/n553/fn2/fc111/ftbu/bo3/tt0/td2/th2" frameborder="0" width="309" height="20"></iframe>
+
+
+
+
+
+
+For time 
+
+
+
+<iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw10/cf100/hgr0/fas16/fdi68/mqc000/mqs3/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
+
+For center 
+
+
+
+
+<h1 align = center>  center  </h1>
+
+
+
+
+
+
+
+For copy 
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
+
+<input type="text" value="Hello World" id="myInput">
+<button onclick="myFunction()">Copy text</button>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+
+
+
+For moving text 
+
+
+
+
+
+	<marquee right to lift><font face="arial MT" size=6 color=red><h1>samson kiran</h1></font>
+	</marquee>
+
+
+
+
+
+
+
+
+For set calendar 
+
+
+
+
+
+
+<form action="/action_page.php">
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit">
+</form>
+
+
+
+
+For read more 
+
+
+
+
+<p>
+
+samson 
+
+
+
+<span id="dots">...</span><span id="more">
+
+kiran 
+
+
+
+</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+ 
+ if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+
+
+For color button 
+
+
+
+
+<input type="button" style="background-color:red;color:blue;width:400px;
+height:30px;" value="samson kiran">
+
+
+
+
+
+
+For color line 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!for background color!>
+    <body style="background-color:blue">
+      
+  <!for samson kiran! title>
+  <title>samson kiran</title>
+    
+    
+  <!for head!>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+    
+    <!for without zoom!>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+   
+      <!for head!>
+      
+      <style>
+/* Red border */
+hr.new1 {
+  border-top: 1px solid red;
+}
+
+/* Dashed red border */
+hr.new2 {
+  border-top: 1px dashed red;
+}
+
+/* Dotted red border */
+hr.new3 {
+  border-top: 1px dotted red;
+}
+
+/* Thick red border */
+hr.new4 {
+  border: 1px solid red;
+}
+
+/* Large rounded green border */
+hr.new5 {
+  border: 10px solid red;
+  border-radius: 5px;
+}
+</style>
+      
+      
+    
+</head>
+<body>
+  
+  <hr size="25" width="100%" color="red">
+
+  
+  
+  <font face="arial black" size=7 color=red><h3 align=center><b>samson kiran</b></h3></font>
+  
+  
+  <h1>samson kiran</h1>
+  
+  <h2>Style HR</h2>
+<p>Default:</p>
+<hr size="0" width="100%" color="red">
+<p>Different styles of HR:</p>
+<hr class="new1" size="0" widht="100%" color="red">
+<hr class="new2" size="0" width= color="red">
+<hr class="new3" size="0" width="100%" color="red">
+<hr class="new4" size="0">
+<hr class="new5" size="0">
+
+  
+
+
+For navigation menu
+
+
+  
+  
+</body>
+</ t-size:30px;cursor:pointer" onclick="openNav()">&#9776; samsonkiran</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+
+
+
+
+
+
+
+For background 
+
+
+
+
+<body style="background-color:black">
+
+
+
+
+
+
+For line
+
+
+
+
+<hr size="20" width="100%" color="red">
+
+
+
+
+
+
+For color box
+
+
+
+
+<div style="background:red;border:1px solid #cccccc;padding: 10px;">
+<p>samson kiran!</p>
+</div>
+
+
+
+
+
+
+For color text box
+
+
+
+
+
+
+
+<h1 style="background-color:red;">This is a heading</h1>
+
+
+<p style="background-color:red;">samson  kiran </p>
+
+
+
+
+
+
+
+for color text box
+
+
+
+
+
+
+<h1 style="border: 2px solid Tomato;">samson kiran</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">samson kiran</h1>
+
+<h1 style="border: 2px solid Violet;">samson kiran</h1>
+
+
+
+
+
+
+
+For up main manu
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: blue;
+  color: red;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+ 
+
+</body>
+</html>
+
+
+
+For down main manu
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+  <h1>Fixed Bottom Menu</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the bottom of the page while scrolling</h2>
+  
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+For up main manu
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>samson kiran</h2>
+
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+
+<div class="content">
+  <h3>Sticky Navigation Example</h3>
+  <p>The navbar will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+For theme 
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body
+
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+For login 
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+
+
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+For scroll down measurement
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>samson kiran</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<div class="content">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+For opening time 
+
+
+
+
+
+
+
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML =d ;
+</script>
+
+</body>
+</html>
+
+
+
+
+For WhatsApp chat 
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+<body>
+<!--Div where the WhatsApp will be rendered-->
+  <div id="WAButton"></div>
+</body> 
+
+<script type="text/javascript">  
+   $(function () {
+                $('#WAButton').floatingWhatsApp({
+               phone: '+91 9500190050', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, how can we help you?', //Popup Message
+               showPopup: true, //Enables popup display
+               buttonImage: '<img src="whatsapp.svg" />',
+               position: "right" //Position: left | right
+           });
+       });
+</script> <a href="https://wa.me/!!!yourNumberWithCountryCodeHere!!!?text=Hi%20Eric,%20I%20am%20sending%20you%20this%20message%20because%20I%20am%20interested%20in%20your%20business!" style="text-decoration: none;" target="_blank">
+	 <img src="https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="50" height="50"/>
+</a>
+
+<a href="https://wa.me/!!!yourNumberWithCountryCodeHere!!!?text=Hi%20Eric,%20I%20am%20sending%20you%20this%20message%20because%20I%20am%20interested%20in%20your%20business!" target="_blank">
+  Send Message
+</a>
+
+
+
+
+
+
+For WhatsApp chat 
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+<body>
+<!--Div where the WhatsApp will be rendered-->
+  <div id="WAButton"></div>
+</body> 
+
+<script type="text/javascript">  
+   $(function () {
+                $('#WAButton').floatingWhatsApp({
+               phone: '+919500190050', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, how can we help you?', //Popup Message
+               showPopup: true, //Enables popup display
+               buttonImage: '<img src="https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="40" height="40" />',
+               position: "right" //Position: left | right
+           });
+       });
+</script> <a href="https://wa.me/+919500190050?text=Hi%20Eric,%20I%20am%20sending%20you%20this%20message%20because%20I%20am%20interested%20in%20your%20business!" style="text-decoration: none;" target="_blank">
+	 <img src="https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="50" height="50"/>
+</a>
+
+<a href="https://wa.me/+919500190050?text=Hi%20Eric,%20I%20am%20sending%20you%20this%20message%20because%20I%20am%20interested%20in%20your%20business!" target="_blank">
+  Send Message
+</a>
+
+
+
+
+
+
+For 
+
+
+
+
+
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js
+
+
+
+
+
+
+
+For Icon
+
+
+
+
+
+
+
+<!-- HTML code to add icon in the title bar -->
+<!DOCTYPE html> 
+
+<html> 
+
+    <head> 
+
+        <meta charset = "utf-8" /> 
+
+          
+
+        <title> 
+
+            GeeksforGeeks icon 
+
+        </title> 
+
+          
+
+        <!-- add icon link -->
+
+        <link rel = "icon" href =  
+
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+
+        type = "image/x-icon"> 
+
+          
+
+    </head> 
+
+      
+
+    <body> 
+
+        <h1 style = "color:green;"> 
+
+            GeeksforGeeks 
+
+        </h1> 
+
+          
+
+        <p> 
+
+            GeeksforGeeks icon added in the title bar 
+
+        </p> 
+
+    </body> 
+
+</html> 
+
+
+
+
+
+
+For Popup 
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Animated Modal with Header and Footer</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Head</h2>
+    </div>
+    <div class="modal-body">
+      <p>    
+
+        
+   
+<iframe src="https://coolfont.org/" frameborder="0" width="300" height="600"></iframe> 
+    
+    
+    </p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.get
+
+
+
+
+
+
+
+
+
+
+
+
