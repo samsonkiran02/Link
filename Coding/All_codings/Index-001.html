@@ -112,9 +112,6 @@ For blink image end...........
 
 
 
-
-
-
 For clock 👇
 
 <iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw25/cf100/hgr0/fas16/fdi64/mqc000/mqs4/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
@@ -122,6 +119,123 @@ For clock 👇
 <iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw10/cf100/hgr0/fas20/fdi68/mqc000/mqs3/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
 
 <iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw10/cf100/hgr0/fas16/fdi68/mqc000/mqs3/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
+
+
+
+
+
+For clock (or) For time 👇
+
+
+
+
+<!--  hours:minutes and AM (or) PM  {12hr}  -->
+<div id="clockbox1"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+
+var clocktext=""+nhour+":"+nmin+ap+"";
+document.getElementById('clockbox1').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+<!--  hours:minutes:seconds and AM (or) PM  {12hr}  -->
+
+<div id="clockbox2"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox2').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+<!--  hours:minutes  {24hr}  -->
+<div id="clockbox3"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes();
+if(nmin<=9) nmin="0"+nmin
+
+var clocktext=""+nhour+":"+nmin+"";
+document.getElementById('clockbox3').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+<!--  hours:minutes:seconds {24hr}  -->
+
+<div id="clockbox4"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+nhour+":"+nmin+":"+nsec+"";
+document.getElementById('clockbox4').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+For clock (or) For time  end ..........
+
+
+
+
+
 
 
 
