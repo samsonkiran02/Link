@@ -1,1 +1,813 @@
-404
+
+For Without zoom 👇
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+
+
+For multiple background color 👇
+
+body {
+background:linear-gradient(to top left, pink, cyan, hotpink, gold, white, red, blue, yellow, green );
+}
+
+
+
+
+
+For clock 👇
+
+<iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw25/cf100/hgr0/fas16/fdi64/mqc000/mqs4/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
+
+<iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw10/cf100/hgr0/fas20/fdi68/mqc000/mqs3/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
+
+<iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw10/cf100/hgr0/fas16/fdi68/mqc000/mqs3/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
+
+
+
+
+For read more and less button 👇
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#more {display: none;}
+</style>
+</head>
+<body>
+<h2>Read More Read Less Button</h2>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+<p>samson
+<span id="dots">...</span><span id="more">
+ kiran 
+</span></p>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+For whatsapp chat box 👇
+
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+<body>
+<!--Div where the WhatsApp will be rendered-->
+  <div id="WAButton"></div>
+</body> 
+
+<script type="text/javascript">  
+   $(function () {
+                $('#WAButton').floatingWhatsApp({
+               phone: '9500190050', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, how can we help you?', //Popup Message
+               showPopup: true, //Enables popup display
+               buttonImage: '<img src="whatsapp.svg" />',
+               position: "right" //Position: left | right
+           });
+       });
+</script>
+
+
+
+
+
+For color buttons 👇
+
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:50px;
+  width:200px;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: black;} /* Black */
+</style>
+</head>
+<body>
+<h2>Button Colors</h2>
+<button class="button">Green</button>
+<button class="button button2">Blue</button>
+<button class="button button3">Red</button>
+<button class="button button4">Black</button>
+</body>
+</html>
+
+
+
+
+For text show and not show 👇
+
+<html>
+<head>
+<style>
+.this will show
+/*  This will not show  */
+</style>
+</head>
+<body>
+<h1>this will show</h1>
+<h1 hidden>this will not show</h1>
+<p>this will show</p>
+<p hidden>This will not show</p>
+this will show
+<!-- This will not show -->
+<script>
+.this will show
+/*  This will not show  */
+</script>
+</body>
+</html>
+
+
+
+
+
+For navigation slide manu 👇
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: red;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;/
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; samsonkiran</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+For line 👇
+
+<style>
+/* Red border */
+hr.new1 {
+  border-top: 1px solid red;
+}
+
+/* Dashed red border */
+hr.new2 {
+  border-top: 1px dashed red;
+}
+
+/* Dotted red border */
+hr.new3 {
+  border-top: 1px dotted red;
+}
+
+/* Thick red border */
+hr.new4 {
+  border: 1px solid red;
+}
+
+/* Large rounded green border */
+hr.new5 {
+  border: 10px solid green;
+  border-radius: 5px;
+}
+</style>
+
+<hr class="new1">
+<hr class="new2">
+<hr class="new3">
+<hr class="new4">
+<hr class="new5">
+
+
+
+
+
+For without copy 👇
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #cc0000;
+      }
+    </style>
+  </head>
+  <body>
+    <p>I am a selectable text. You can select me.</p>
+    <div class="unselectable">I am an unselectable text. My text selection is disabled.</div>
+  </body>
+</html>
+
+
+
+
+
+For search in website 👇
+
+<style>
+input{
+    border-radius:50px;
+     width: 100px;
+    height: 30px;
+}
+</style>
+
+<form method="get" action="http://www.google.com/search">
+<div style="border:2px dotted black;padding:10px;width:15em; border-radius:50px;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25" style="color:#808080;"
+maxlength="255" value="Google site search"
+onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+<input type="submit" value="Go!" />
+<input type="hidden" name="sitesearch" value="codepen.io" /></td></tr>
+</table>
+</div>
+</form>
+
+
+
+
+
+For search images in Google 👇
+
+<form action="http://www.google.com/images?q=your+search+terms"> 
+<input type="search" name="q"> 
+</form>
+
+
+
+
+
+For image rotating 👆
+
+<style>
+body {
+		text-align: center;
+		padding: 100px 0 0 0;
+		color: red;
+		background: blue;
+}
+
+#loading {
+		-webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+</style>
+
+<img id="loading" src="https://samsonkiran02.github.io/Link/Images/PNG/Samson-Kiran.png">
+
+
+
+
+
+For moving image 👇
+
+<html>
+<head>
+<style> 
+box {
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:350px; top:0px;}
+  50%  { left:350px; top:740px;}
+  75%  { left:0px; top:740px;}
+  100% { left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<box>
+<img src="https://samsonkiran02.github.io/Link/Images/PNG/Samson-Kiran.png" width="50" height="50"/>
+</box>
+</body>
+</html>
+
+
+
+
+
+For enter the password and view the website 👇
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Password</title>
+ <style>
+  body {
+   background-color: lightblue;
+   padding: 30px;
+  }
+ </style>
+</head>
+<body>
+ <p style="font-size: 30pt;">THE MONK DIAMOND DISCOVERY</p>
+ <p>Please enter the password to view this website.</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="https://samsonkiran02.github.io/Home/Index.html" onclick="return checkPassword();">
+  Click here to submit password and view website
+ </a>
+<script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == " sk ") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</body>
+</html>
+
+
+
+
+
+
+For video 👇
+
+<style>
+video {
+      border-radius:15px;
+      width: 95%;
+      height: 230px;
+}
+</style>
+<center>
+<video controls src="https://samsonkiran02.github.io/Link/Videos/MP4/Samson-Kiran.mp4" poster="https://samsonkiran02.github.io/Link/Images/PNG/Samson-Kiran.png">
+Sorry, your browser doesn't support embedded videos.<a href="https://samsonkiran02.github.io/Home/Index.html">Home</a>
+and watch it with your favorite video player!
+</video>
+</center>
+
+
+
+
+
+For audio 👇
+
+<style >
+audio {
+     width: 90%;
+     height:35px;
+     border-radius:100px;
+}
+</style>
+<center>
+<audio controls>
+  <source src="https://samsonkiran02.github.io/Link/Audio/MP3/Samson-Kiran.mp3" />
+</audio>
+</center>
+
+
+
+
+
+
+
+<style>
+
+audio::-webkit-media-controls-play-button{
+background-color:blue;
+border-radius:10px;
+}
+
+audio {
+width: 90%;
+height:38px;
+border-radius:100px;
+box-shadow: 5px 5px 5px 5px rgba(0,0, 0, 0.4);
+transform: scale(1.05);
+}
+
+audio:hover {
+-webkit-box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+-moz-box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+}
+
+.styleit audio::-webkit-media-controls-panel {
+          background-color:red;
+}
+
+</style>
+
+<section class="styleit">
+<center>
+<audio controls controlsList="nodownload">
+<source src="https://samsonkiran02.github.io/Link/Audio/MP3/Samson-Kiran.mp3" />
+Sorry, your browser doesn't support embedded videos.<a href="https://samsonkiran02.github.io/Home/Index.html">Home</a>
+</audio>
+</center>
+</section>
+
+
+
+
+
+
+<style>
+
+audio {
+width: 90%;
+height:38px;
+border-radius:100px;
+-webkit-box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+-moz-box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+transform: scale(1.05);
+}
+
+audio:hover {
+-webkit-box-shadow: 0px 0px 19px 15px rgba(5,4,5,1);
+-moz-box-shadow: 0px 0px 19px 15px rgba(5,4,5,1);
+box-shadow: 0px 0px 19px 15px rgba(5,4,5,1);
+}
+
+audio::-webkit-media-controls-play-button{
+background-color:blue;
+border-radius:50px;
+}
+
+.styleit audio::-webkit-media-controls-panel {
+          background-color:red;
+}
+
+</style>
+<body bgcolor="blue">
+<br>
+<br>
+<section class="styleit">
+<center>
+<audio controls controlsList="nodownload">
+<source src="https://samsonkiran02.github.io/Link/Audio/MP3/Samson-Kiran.mp3" />
+Sorry, your browser doesn't support embedded videos.<a href="https://samsonkiran02.github.io/Home/Index.html">Home</a>
+</audio>
+</center>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+img {
+  opacity: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  max-height: 50%;
+  max-width: 50%;
+  vertical-align: middle;
+  -webkit-animation-name: ziim;
+  -webkit-animation-duration: 0.6s;
+  animation-name: ziim;
+  animation-duration: 0.6s;
+}
+
+.img1 {
+ width: 95%;
+ height: 200px;
+border-radius:10px;
+-webkit-box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+-moz-box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+box-shadow: 0px 0px 9px 5px rgba(5,4,5,1);
+transform: scale(1.05);
+   align-items:center;
+
+}
+
+img:hover {
+-webkit-box-shadow: 0px 0px 19px 15px rgba(5,4,5,1);
+-moz-box-shadow: 0px 0px 19px 15px rgba(5,4,5,1);
+box-shadow: 0px 0px 19px 15px rgba(5,4,5,1);
+}
+
+</style>
+<body bgcolor="blue">
+<center>
+<br>
+<br>
+<img class="img1" src="https://samsonkiran02.github.io/Link/Images/PNG/Samson-Kiran.png" >
+</center>
+
+
+
+<style>
+img {
+      width: auto;
+      height: auto;
+      background: rgba(0,0,0,0.5);
+}
+.img1 {
+ width: 95%;
+ height: 200px;
+border-radius:10px;
+-webkit-box-shadow: 0px 0px 5px 2px white;
+-moz-box-shadow: 0px 0px 5px 2px white;
+box-shadow: 0px 0px 5px 2px white;
+transform: scale(1.05);
+   margin-top:20px;
+     margin-bottom:20px;
+
+}
+
+.img1:hover {
+-webkit-box-shadow: 0px 0px 10px 5px white;
+-moz-box-shadow: 0px 0px 10px 5px white;
+box-shadow: 0px 0px 10px 5px white;
+}
+
+img:after {
+height:100px;
+-webkit-box-shadow: 0px 0px 10px 5px white;
+-moz-box-shadow: 0px 0px 10px 5px white;
+box-shadow: 0px 0px 10px 5px white;
+}
+
+
+
+</style>
+<body bgcolor=" black">
+<center>
+<br>
+<br>
+<img class="img1" src="https://samsonkiran02.github.io/Link/Images/PNG/Samson-Kiran.png" >
+
+
+<img class="img1" src="https://samsonkiran02.github.io/Link/Images/JPG/SK-house-0A001.jpg" >
+
+<img class="img1" src="https://samsonkiran02.github.io/Link/Images/JPG/SK-plant-0A001.jpg" >
+
+<img class="img1" src="https://samsonkiran02.github.io/Link/Images/JPG/SK-house-0A001.jpg" >
+
+</center>
+
+
+
+
+
+
+For full page website 👇
+
+
+
+
+<html>
+<head>
+<title>Samson Kiran</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<style>
+html, body, iframe {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: black;
+     -webkit-user-select: none;
+     -webkit-touch-callout: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+iframe {
+     width: 100%;
+     height: 100%;
+     margin-top: 0px;
+     color: black;
+     background-color: black; 
+     border-size: 0px;
+     border-radius: 0px;
+     border-color: black;
+}
+</style>
+</head>
+<body>
+<iframe class="1" src="https://samsonkiran02.github.io/Link/Coding/404.html " 
+height="100%" width="100%" frameborder="0px"></iframe>
+</body>
+</html>
+
+
+And 👇
+
+
+<style> 
+html, body, iframe {
+     height: 100%;
+     weight: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: black;
+} 
+</style>
+ <iframe src="https://samsonkiran02.github.io/Home/Index.html" width="100%" height="100%" frameborder="0" ></iframe>
+
+
+
+
+
+
+
+For add website 👇
+
+
+<iframe src="https://samsonkiran02.github.io/Home/Index.html" frameborder="0px" width="300" height="300" 
+></iframe>
+
+And 👇
+
+
+<center>
+<iframe src="https://samsonkiran02.github.io/Home/Index.html" frameborder="10px" width="300" height="500" style="border-color:red; border-radius: 20px; background-color: red;
+    -webkit-box-shadow: 0px 0px 10px 5px red;
+    -moz-box-shadow: 0px 0px 10px 5px red;
+    box-shadow: 0px 0px 10px 5px red; "
+></iframe>
+</center>
+
+
+
+
+
+For print this page 👇
+
+
+<button onclick="window.print()">Print this page</button>
+
+
+
+
+
+
+
+<style>
+
+p {
+
+  /*    font-family: Georgia, serif;
+  //    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   //   font-family: "Times New Roman", Times, serif;
+   //     font-family: Arial, Helvetica, sans-serif;  
+   //   font-family: "Arial Black", Gadget, sans-serif;
+   //   font-family: "Comic Sans MS", cursive, sans-serif;
+   //   font-family: Impact, Charcoal, sans-serif;
+   //   font-family: "Lucida Sans Unicode", "Lucida Grande", 
+   //   font-family: Tahoma, Geneva, sans-serif;
+   //    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    //   font-family: Verdana, Geneva, sans-serif;
+   //   font-family: "Courier New", Courier, monospace;
+    //   font-family: "Lucida Console", Monaco, monospace;
+                */
+
+
+font-size: 25px;
+letter-spacing: 5.4px;
+word-spacing: 15.4px;
+color: #FF0000;
+font-weight: 600;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+</style>
+
+
+
+
+
+<p>samson kiran </p>
+https://html-css-js.com/css/generator/font/
+
