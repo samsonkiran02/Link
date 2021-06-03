@@ -236,6 +236,310 @@ For clock (or) For time  end ..........
 
 
 
+For  date  👇
+
+
+
+
+
+
+<!-- months dd, yyyy   -->
+
+<div id="clockbox1"></div>
+
+<script type="text/javascript">
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+
+var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('clockbox1').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+<!-- days, months dd  -->
+
+
+<div id="clockbox2"></div>
+
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"";
+document.getElementById('clockbox2').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+<!-- days, months dd, yyyy  -->
+
+<div id="clockbox3"></div>
+
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('clockbox3').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+<!-- mm-dd-yyyy       -->
+
+<div id="clockbox4"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+(nmonth+1)+"-"+ndate+"-"+nyear+"";
+document.getElementById('clockbox4').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+<!-- mm/dd/yyyy       -->
+
+<div id="clockbox5"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+(nmonth+1)+"/"+ndate+"/"+nyear+"";
+document.getElementById('clockbox5').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+<!-- mm.dd.yyyy       -->
+
+<div id="clockbox6"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+(nmonth+1)+"."+ndate+"."+nyear+"";
+document.getElementById('clockbox6').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+<!-- dd-mm-yyyy  -->
+
+<div id="clockbox7"></div>
+
+<script type="text/javascript">
+function GetClock(){ 
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+ndate+"-"+(nmonth+1)+"-"+nyear+"";
+document.getElementById('clockbox7').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+
+<!--  dd/mm/yyyy    -->
+
+<div id="clockbox8"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+ndate+"/"+(nmonth+1)+"/"+nyear+"";
+document.getElementById('clockbox8').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+
+<!-- dd.mm.yyyy     -->
+
+
+<div id="clockbox9"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+ndate+"."+(nmonth+1)+"."+nyear+"";
+document.getElementById('clockbox9').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+
+<!--  yyy-mm-dd      -->
+<div id="clockbox10"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=(d.getMonth()+1),ndate=d.getDate(),nyear=d.getFullYear();
+if(nmonth<=9) nmonth="0"+nmonth;
+if(ndate<=9) ndate="0"+ndate;
+
+var clocktext=""+nyear+"-"+nmonth+"-"+ndate+"";
+document.getElementById('clockbox10').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+<!--  yyy/mm/dd      -->
+<div id="clockbox11"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=(d.getMonth()+1),ndate=d.getDate(),nyear=d.getFullYear();
+if(nmonth<=9) nmonth="0"+nmonth;
+if(ndate<=9) ndate="0"+ndate;
+
+var clocktext=""+nyear+"/"+nmonth+"/"+ndate+"";
+document.getElementById('clockbox11').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+
+
+<!--  yyy.mm.dd      -->
+<div id="clockbox12"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=(d.getMonth()+1),ndate=d.getDate(),nyear=d.getFullYear();
+if(nmonth<=9) nmonth="0"+nmonth;
+if(ndate<=9) ndate="0"+ndate;
+
+var clocktext=""+nyear+"."+nmonth+"."+ndate+"";
+document.getElementById('clockbox12').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+
+
+For date end .......
+
+
+
+ 
+
+
+
+
 
 
 
