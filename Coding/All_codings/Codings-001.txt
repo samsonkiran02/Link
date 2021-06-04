@@ -157,6 +157,52 @@ For online (or) offline end.........
 
 
 
+
+For links 👇
+
+
+
+<a href="tel:+91-9500190050">click to call</a>
+<br>
+<a href="sms:+919500190050">click to massage</a>
+<br>
+<a href="sms:+919500190050?body=Type your massage here...">Click to massage</a>
+<br>
+<a href="mailto:www.samsonkiran.com@gmail.com">click to mail</a>
+<br>
+<a href="mailto:www.samsonkiran.com@gmail.com?cc=www.samsonkiran02@gmail.com&amp;bcc=www.samsonkiran@gmail.com&amp;subject=Type your subject here...&amp;body=Type your compose email here...">click to mail</a>
+<br>
+<a href="https://wa.me/+919500190050">click to whatsapp</a>
+<br>
+<a href="https://wa.me/+919500190050?text=Type%20your%20massage%20here...">click to whatsapp</a>
+<br>
+
+
+
+For links end...........
+
+
+
+
+
+
+
+For download link 👇
+
+
+
+https://drive.google.com/uc?export=download&id=
+
+
+
+For download link end..............
+
+
+
+
+
+
+
 For website 1 👇
 
 
