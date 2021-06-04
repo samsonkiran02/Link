@@ -3723,7 +3723,29 @@ For patasu website end...............
 
 
 
+For coming time 👇
 
+
+
+
+
+<html>
+<body>
+Current Time: <span id="hms"></span>
+<script>
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById('hms').innerHTML=h+":"+m+":"+s;
+</script>
+</body>
+</html>
+
+
+
+
+For coming time end.........
 
 
 
