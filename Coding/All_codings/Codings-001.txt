@@ -6602,6 +6602,270 @@ For clock end..............
 
 
 
+For 11th computer application book 👇
+
+
+
+
+AC - 3 practical 👇
+
+
+<html>
+<head>
+<title> User Registration </title>
+</head>
+<body>
+<h1 align = center> Registration Form </h1> 
+<form id=reg_form method = post action =" ">
+User Name: <input type = text name=uname > <br><br>
+Password: <input type = password name=pword1 > <br><br>
+ Re-type Password: <input type = password name=pword2 > <br><br>
+Gender:
+<input type = radio name=male value="M" > Male 
+<input type = radio name=female value="F" > Female
+<h2 align=center> Additional Information </h2>
+Optional Subject:
+<select name=subj>
+              <option value = CT> Computer Technology 
+              <option value = Paint Painting
+              <option value = SG> Sports and Games
+</select>
+<br><br>
+<input type = checkbox name=mail > Put me on mail list <br> <br>
+<input type = reset value=Reset > 
+<input type = submit value=Submit
+</form>
+</body>
+</html>
+
+
+
+
+
+AC - 3 practical end.......
+
+
+
+
+
+CA - 4  practical 👇
+
+<html>
+<head>
+<title> Height and Weight Table </title>
+<head>
+<body>
+<table border=10>
+<caption> Height and Weight </caption>
+<tr>
+<th width=40%> Name </th>
+<th width=20%> Class </th>
+<th width=20%> Height </th>
+<th width=20%> Weight </th>
+</tr>
+<tr>
+<td> Mani </td>
+<td> XII - G </td>
+<td> 5'0" </td>
+<td> 45 </td>
+</tr>
+<tr>
+<td> Vasu </td>
+
+<td> XI - H </td>
+<td> 54" </td>
+<td> 49 </td>
+</tr>
+<tr>
+<td> Murali </td>
+<td> XI - B </td>
+<td> 5'1" </td>
+<td> 51 </td>
+</tr>
+<tr>
+<td> Pallavai </td>
+<td> XII - D </td>
+<td> 4'5" </td>
+<td> 50 </td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+CA - 4  practical end........
+
+
+
+
+
+
+
+CA - 5  practical 👇
+
+
+
+
+<html>
+<head>
+<title> Sets of Lists </title>
+</head>
+<body>
+<OL>
+      <LI> Tamilnadu
+            <OL type=a>
+                        <LI> Chennai
+                        <LI> Madurai
+             </OL>
+       <LI> Andhra Pradesh
+            <OL type=a>
+                         <LI> Amaravathi
+                         <LI> Vijayawada
+           </OL>
+       <LI> Kerala
+             <OL type=a>
+                         <LI> Thiruvananthapuram
+                         <LI> Cochin
+           </OL>
+           </OL>
+           <UL>
+                 <LI> Languages
+                      <UL type=circle>
+                                   <LI> Tamil
+                                   <LI> Malayalam
+                                   <LI> Telugu
+                     </UL>
+                 <LI> Science
+                      <UL type=circle>
+                                  <LI> Physics
+                                  <LI> Chemistry
+                                  <LI> Zoology
+                    </UL>
+               <LI> Humanities
+                    <UL type=circle>
+                                 <LI> History
+                                <LI> Commerce
+                                <LI> Economics
+                   </UL>
+    </UL>
+    </body>
+   </html>
+
+
+
+
+
+CA - 5  practical end............
+
+
+
+
+For 11th computer application book javascript 👇
+
+
+<Html>
+<Head>
+<Title> Program - To test for statement in JavaScript </Title>
+</Head>
+<Body>
+<script language="javascript" type="text/javascript"> 
+var no1 = prompt("Please enter Table You want :", "0");  document.write("<h2> Multiplication for your need </h2>"); for( var no2=0;no2<=10;no2++)
+{
+                document.write(no1+"x"+no2+"="+no1*no2+"<br>");
+}
+</script> 
+</Body>
+</Html>
+
+
+
+
+<Html>
+<Head>
+<Title>Demo Program - To test if..else command in JavaScript </Title>
+</Head> 
+<Body>
+<script language="javascript" type="text/javascript">
+ var age = prompt("Please enter your Age :", "0"); 
+if(age>=18) 
+{             alert("You Are Eligible to get Driving Licence..");      }
+
+else
+{           alert("You Are Not Eligible to get Driving Licence..");      } 
+</script>
+</body>
+</html>
+
+
+
+
+
+ <Html>
+ <Head>
+<Title>Demo Program - To test if command in JavaScript
+ </Title>
+</Head>
+<Body>
+<script language="javascript" type="text/javascript">
+ var age = prompt("Please enter your Age :", "0");
+if(age>=16)
+{
+alert("You Are Eligible to Vote ....");
+}
+</script>
+</Body>
+</Html>
+
+
+
+
+
+ <Html>
+ <Head>
+<Title>Demo Program - To test if..else command in JavaScript </Title>
+</Head>
+<Body>
+<script language="javascript" type="text/javascript">
+var age = prompt("Please enter your Age :", "0");
+if(age>=18)
+ {       alert("You Are Eligible to get Driving Licence..");        }
+else 
+{       alert("You Are Not Eligible to get Driving Licence.");        }
+</script>
+ </Body>
+ </Html>
+
+
+
+
+
+For 11th computer application book javascript end..........
+
+
+
+
+
+For 11th computer application book end...........
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
