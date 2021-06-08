@@ -1,0 +1,12 @@
+	@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"); 
+			
+		
+			
+.sk{
+   display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;       
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
