@@ -588,9 +588,6 @@ For blink image end...........
 
 
 
-
-
-
 For clock 👇
 
 <iframe src="http://free.timeanddate.com/clock/i7p1zvbd/n553/szw110/szh110/hoc000/hbw25/cf100/hgr0/fas16/fdi64/mqc000/mqs4/mql20/mqw2/mqd94/mhc000/mhs3/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="110" height="110"></iframe>
@@ -1337,6 +1334,26 @@ hr.new5 {
 <hr class="new3">
 <hr class="new4">
 <hr class="new5">
+
+
+
+
+For copy alert box 👇 ............
+
+
+<html>
+<body>
+<p oncopy="myFunction()">Try to copy this text</p>
+<script>
+function myFunction() {
+  alert("You copied text!");
+}
+</script>
+</body>
+</html>
+
+For copy alert box end ............
+
 
 
 
