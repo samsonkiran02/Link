@@ -1,3 +1,5 @@
+/* URL: https://samsonkiran02.github.io/Link/Coding/JS/Published/Fireworks.js */
+
 /*  fws01skjs  */
 document.write('<style>\n');
 document.write('canvas {\n');
