@@ -21,7 +21,7 @@ document.write('   position: relative;\n');
 document.write('   z-index:1000;\n');
 document.write('}\n');
 document.write('</style>');
-document.write('<audio style=\"display:none;z-index:5;\" type=\"audio/mpeg\" controlsList=\"nocontrols\" id=\"Fireworks-01-sk.js_firework_sound-audio-01\" src=\"https://virtualgadgets.in/diwali/fire.mp3\"></audio>');
+document.write('<audio style=\"display:none;z-index:5;\" type=\"audio/mpeg\" controlsList=\"nocontrols\" id=\"Fireworks-01-sk.js_firework_sound-audio-01\" src=\"https://samsonkiran02.github.io/Link/Audio/MP3/Published/Fireworks.mp3\"></audio>');
 ! function (a, b) {
 	"object" == typeof module && "object" == typeof module.exports ? module.exports = a.document ? b(a, !0) : function (a) {
 		if (!a.document) throw new Error("fws01skjs requires a window with a document");
