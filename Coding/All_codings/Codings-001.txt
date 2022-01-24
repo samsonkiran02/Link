@@ -6611,6 +6611,38 @@ a.hsw,a.hsr,a.hsc)},update:function(){this.t=locDate();this.drawHands();e(this.u
 For clock end..............
 
 
+For without refresh
+
+body {
+    overscroll-behavior: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6868,35 +6900,6 @@ For 11th computer application book javascript end..........
 
 
 For 11th computer application book end...........
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
